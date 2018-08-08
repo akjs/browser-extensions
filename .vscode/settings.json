@@ -1,0 +1,14 @@
+{
+  "prettier.parser": "flow",
+  "prettier.arrowParens": "always",
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.autoFixOnSave": true
+}

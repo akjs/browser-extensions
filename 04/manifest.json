@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "AkJS Meetup",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_icon": "akjs.png",
+    "default_popup": "ui/index.html",
+    "default_title": "AkJS"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

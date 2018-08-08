@@ -1,0 +1,14 @@
+{
+  "name": "AkJS Storage",
+  "version": "0.1",
+  "manifest_version": 2,
+
+  "description": "Storage Sync Extension",
+
+  "permissions": ["storage"],
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "akjs.png"
+  }
+}
