@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AkJS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .hidden {
+      display: none;
+    }
+
+    body {
+      min-width: 300px;
+    }
+
+    .app {
+      margin: 10px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+</head>
+
+<body>
+  <div id="login" class="hidden app">
+    <input type="text" id="email" />
+    <br />
+    <input type="password" id="password" />
+    <br />
+    <a href="#" id="login_button">Login</a>
+  </div>
+  <div id="link" class="hidden app">
+    <form>
+      <fieldset>
+        <legend>Link Details</legend>
+        <label> Title </label>
+        <input type="text" name="title" id="title" />
+
+        <label> Url </label>
+        <input type="text" name="url" id="url" />
+
+        <label> Description </label>
+        <textarea name="description" id="description"></textarea>
+
+        <div class="button-group">
+          <button type="submit" class="button-primary">Save</button>
+        </div>
+      </fieldset>
+    </form>
+
+  </div>
+  <div id="debug_panel">
+
+  </div>
+  <script src="setup.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>
